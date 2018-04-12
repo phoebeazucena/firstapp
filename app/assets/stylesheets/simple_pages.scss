@@ -6,7 +6,7 @@ html, body {
   height: 100%;
 }
 nav {
-  background-color: #5EA3AD;
+  background: linear-gradient(60deg, #44767D, #A2D4DE);
 }
 nav ul li {
   display: inline-block;
@@ -45,6 +45,7 @@ p {
   font-size: 1.7vw;
   letter-spacing: 0.1em;
 }
+
 footer {
   padding: 15px;
   background-color: #A2D4DE;
