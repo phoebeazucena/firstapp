@@ -45,7 +45,12 @@ p {
   font-size: 1.7vw;
   letter-spacing: 0.1em;
 }
-
+.home-image {
+  display: inline-block;
+  margin-left: 10%;
+  padding: 10px;
+  vertical-align: middle;
+}
 footer {
   padding: 15px;
   background-color: #A2D4DE;
