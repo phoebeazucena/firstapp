@@ -1,3 +1,60 @@
-// Place all the styles related to the simple_pages controller here.
+* {
+  margin: 0;
+}
+html, body {
+  background-color: #F5E9DC;
+  height: 100%;
+}
+nav {
+  background-color: #5EA3AD;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  margin-left: 10px;
+  font-family: Poiret One, Geneva, sans-serif;
+  font-size: 1.7vw;
+}
+nav ul li a {
+  color: #fff;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+h1 {
+  padding: 10px;
+  margin-top: -10px;
+  background-color: #fff;
+  font-family: Cutive Mono, Courier New, monospace;
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  font-family: Sacramento, cursive;
+  font-size: 3vw;
+  text-align: center;
+}
+p {
+  font-family: Poiret One, Geneva, sans-serif;
+  font-size: 1.7vw;
+  letter-spacing: 0.1em;
+}
+footer {
+  padding: 15px;
+  background-color: #A2D4DE;
+  color: #fff;
+  font-size: 1.4vw;
+  text-align: center;
+}
+.site-footer, .page-wrap:after {
+  height: 70px;
+}
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

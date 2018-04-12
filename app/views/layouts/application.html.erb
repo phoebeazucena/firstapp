@@ -2,10 +2,15 @@
 <html>
   <head>
     <title>Firstapp</title>
-    <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Sacramento|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
@@ -16,11 +21,11 @@
         <li><%= link_to "Contact", simple_pages_contact_path %></li>
       </ul>
     </nav>
-
+    <div class="page-wrap">
     <%= yield %>
-
-    <footer>
-      &copy; 2018 Bike Berlin
+    </div><!--end page-wrap-->
+    <footer class="site-footer">
+      &copy; 2018 Salt of the Sea
     </footer>
 
   </body>
