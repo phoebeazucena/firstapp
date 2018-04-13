@@ -37,19 +37,20 @@ h1 {
 }
 h2 {
   font-family: Sacramento, cursive;
-  font-size: 3vw;
+  font-size: 4vw;
   text-align: center;
 }
 p {
+  padding: 15px;
   font-family: Poiret One, Geneva, sans-serif;
-  font-size: 1.7vw;
+  font-size: 1.9vw;
+  font-weight: 700;
   letter-spacing: 0.1em;
 }
 .home-image {
-  display: inline-block;
-  margin-left: 10%;
+  margin: auto;
+  width: 80%;
   padding: 10px;
-  vertical-align: middle;
 }
 footer {
   padding: 15px;
