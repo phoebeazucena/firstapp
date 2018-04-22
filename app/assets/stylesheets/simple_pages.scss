@@ -9,6 +9,7 @@ html, body {
   background-repeat: no-repeat;
   height: 100%;
 }
+//Nav Bar
 nav {
   background: linear-gradient(60deg, #44767D, #A2D4DE);
 }
@@ -25,14 +26,7 @@ nav ul li a {
 nav ul li a:visited {
   color: #fff;
 }
-.page-wrap {
-  min-height: 100%;
-  margin-bottom: -70px;
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
+//Main Content
 h1 {
   padding: 10px;
   margin-top: -10px;
@@ -68,6 +62,15 @@ footer {
   color: #fff;
   font-size: 1.4vw;
   text-align: center;
+}
+//Sticky footer
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
 }
 .site-footer, .page-wrap:after {
   height: 70px;
