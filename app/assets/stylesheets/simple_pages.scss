@@ -2,15 +2,32 @@
   margin: 0;
 }
 html, body {
+  height: 100%;
   background-color: #F5E9DC;
-  background-image: url("matthew-kane-278419-unsplash.jpg");
-  background-position: center;
+}
+body {
+  background-image: url("ameen-fahmy-140090-unsplash.jpg");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+}
+//Carousel
+.carousel {
+  width: 50%;
+  padding: 20px;
+}
+.feat_product {
+  text-align: left;
+  padding-left: 13%;
+}
+.carousel-caption {
+  font-size: 2vw;
+  font-family: Poiret One, Geneva, sans-serif;
+  color: black;
 }
 //Nav Bar
 nav {
+  height: 48px;
   background: linear-gradient(60deg, #44767D, #A2D4DE);
 }
 nav ul li {
@@ -26,6 +43,7 @@ nav ul li a {
 nav ul li a:visited {
   color: #fff;
 }
+
 //Main Content
 h1 {
   padding: 10px;
@@ -43,12 +61,13 @@ h2 {
   text-align: center;
 }
 p {
-  padding: 15px;
+  padding: 15px 15px 20px 15px;
   font-family: Poiret One, Geneva, sans-serif;
   font-size: 1.9vw;
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .home-image {
   margin: auto;

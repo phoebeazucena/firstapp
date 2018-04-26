@@ -1,15 +1,32 @@
-
-.product_name {
+.row {
+  width: 100%;
+  margin: auto;
+}
+.product_wrap {
+  max-width: 375px;
+  margin: 5px;
   padding: 10px;
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.58);
+  background-color: #fff;
+}
+.product_name {
+  padding: 20px 10px 8px;
   border: none;
+  font-family: Zeyada, cursive;
+  font-size: 3vw;
+  letter-spacing: 0.01em;
+  color: #454545;
+}
+.product_info {
+  padding: 3px;
   font-family: Poiret One, Geneva, sans-serif;
-  font-size: 2vw;
+  font-weight: 400;
+  font-size: 1.3vw;
+  background-color: #64ADB8;
+  color: #fff;
 }
 .product_description {
-  background-color: #A37A8A;
-  color: #fff;
-  font-family: Zeyada, cursive;
-  font-weight: 400;
+  font-size: 1.5vw;
 }
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
