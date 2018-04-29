@@ -5,26 +5,7 @@ html, body {
   height: 100%;
   background-color: #F5E9DC;
 }
-body {
-  background-image: url("ameen-fahmy-140090-unsplash.jpg");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-//Carousel
-.carousel {
-  width: 50%;
-  padding: 20px;
-}
-.feat_product {
-  text-align: left;
-  padding-left: 13%;
-}
-.carousel-caption {
-  font-size: 2vw;
-  font-family: Poiret One, Geneva, sans-serif;
-  color: black;
-}
+
 //Nav Bar
 nav {
   height: 48px;
@@ -56,7 +37,7 @@ h1 {
   border: 4px solid #A37A8A;
 }
 h2 {
-  font-family: Zeyada, cursive;
+  font-family: Zeyada, cursive, serif;
   font-size: 4vw;
   text-align: center;
 }
@@ -69,6 +50,42 @@ p {
   line-height: 1.5em;
   background-color: rgba(255, 255, 255, 0.4);
 }
+//LANDING PAGE
+//Carousel
+.carousel {
+  width: 50%;
+  padding: 20px;
+}
+.feat_product {
+  display: inline-block;
+  width: 50%;
+}
+.carousel-caption {
+  font-size: 2vw;
+  font-family: Poiret One, Geneva, sans-serif;
+  color: black;
+}
+//Links
+.links {
+  display: inline-block;
+  float: right;
+  padding: 40px 80px;
+  font-family: Zeyada, cursive, serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+.product_link {
+  display: block;
+  position: relative;
+  padding: 15px;
+}
+a:visited {
+  color: #fff;
+}
+
+//INDEX PAGE
 .home-image {
   margin: auto;
   width: 80%;
@@ -86,6 +103,11 @@ footer {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -70px;
+  padding-top: 50px;
+  background-image: url("ameen-fahmy-140090-unsplash.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .page-wrap:after {
   content: "";

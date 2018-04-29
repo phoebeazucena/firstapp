@@ -1,5 +1,11 @@
 <h2 class="feat_product">Featured Products:</h2>
 <!-- <%= @featured_product.name %> -->
+<!--Link to featured products-->
+<div class="links">
+  <%= link_to "Show 1st Product", product_path(1), class: "product_link" %>
+  <%= link_to "Show 2nd Product", product_path(2), class: "product_link"  %>
+  <%= link_to "Show 3rd Product", product_path(3), class: "product_link"  %>
+</div><!--end links-->
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
