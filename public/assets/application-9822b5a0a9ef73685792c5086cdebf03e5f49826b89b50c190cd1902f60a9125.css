@@ -1,0 +1,295 @@
+/* line 1, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.row {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 5, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product_wrap {
+  max-width: 375px;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.58);
+  background-color: #fff;
+}
+
+/* line 12, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product_name {
+  padding: 20px 10px 8px;
+  border: none;
+  font-family: Zeyada, cursive;
+  font-size: 3vw;
+  letter-spacing: 0.01em;
+  color: #454545;
+}
+
+/* line 20, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product_info {
+  padding: 3px;
+  font-family: Poiret One, Geneva, sans-serif;
+  font-weight: 400;
+  font-size: 1.3vw;
+  background-color: #64ADB8;
+  color: #fff;
+}
+
+/* line 28, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product_description {
+  font-size: 1.5vw;
+}
+/* line 1, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+* {
+  margin: 0;
+}
+
+/* line 4, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+  background-color: #F5E9DC;
+}
+
+/* line 10, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav {
+  height: 48px;
+  background: linear-gradient(60deg, #44767D, #A2D4DE);
+}
+
+/* line 14, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  margin-left: 10px;
+  font-family: Poiret One, Geneva, sans-serif;
+  font-size: 1.7vw;
+}
+
+/* line 21, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav ul li a {
+  color: #fff;
+}
+
+/* line 24, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav ul li a:visited {
+  color: #fff;
+}
+
+/* line 29, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  padding: 10px;
+  margin-top: -10px;
+  background-color: #fff;
+  font-family: Cutive Mono, Courier New, monospace;
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  border: 4px solid #A37A8A;
+}
+
+/* line 39, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-family: Zeyada, cursive, serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+/* line 44, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+p {
+  padding: 15px 15px 20px 15px;
+  font-family: Poiret One, Geneva, sans-serif;
+  font-size: 1.9vw;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 55, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.carousel {
+  width: 50%;
+  padding: 20px;
+}
+
+/* line 59, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.feat_product {
+  display: inline-block;
+  width: 50%;
+}
+
+/* line 63, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  font-size: 2vw;
+  font-family: Poiret One, Geneva, sans-serif;
+  color: black;
+}
+
+/* line 69, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.links {
+  display: inline-block;
+  float: right;
+  padding: 40px 80px;
+  font-family: Zeyada, cursive, serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+
+/* line 79, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.product_link {
+  display: block;
+  position: relative;
+  padding: 15px;
+}
+
+/* line 84, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+a:visited {
+  color: #fff;
+}
+
+/* line 89, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.home-image {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+/* line 94, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #A2D4DE;
+  color: #fff;
+  font-size: 1.4vw;
+  text-align: center;
+}
+
+/* line 103, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -70px;
+  padding-top: 50px;
+  background-image: url("ameen-fahmy-140090-unsplash.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 112, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 116, /Users/phoebeazucena/Desktop/firstapp/app/assets/stylesheets/simple_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 70px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
