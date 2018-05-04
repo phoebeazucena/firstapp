@@ -22,6 +22,12 @@
         <li><%= link_to "Products", products_path %></li>
         <li><%= link_to "Featured Products", simple_pages_landing_page_path %></li>
       </ul>
+      <ul class="navbar-form navbar-right" role="search">
+        <%= form_with(url: products_path, method: 'get', local: true, html: {class: "form-horizontal"}) do |form| %>
+        <li><%= form.text_field :q, id: 'q', value: params[:q], type: "text", class: "navbar-text", size: "22", placeholder: "Search for products..." %></li>
+        <li><%= form.submit 'Search', class: "btn btn-default navbar-btn" %></li>
+        <% end %>
+      </ul>
     </nav>
     <div class="page-wrap">
     <%= yield %>
