@@ -10,8 +10,8 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <% @featured_product.each do |product| %>
-    <li data-target="#carousel-example-generic" data-slide-to="<% @featured_product.each %>" class="<%= "active" if product == @featured_product.first %>"></li>
+    <% (0 ... @featured_product.size).each do |i| %>
+    <li data-target="#carousel-example-generic" data-slide-to="<% i %>" class="<%= "active" if i == 0 %>"></li>
     <% end %>
   </ol>
 

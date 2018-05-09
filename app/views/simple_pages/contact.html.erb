@@ -1,2 +1,24 @@
-<h1>How to find us:</h1>
+<h1>Contact us:</h1>
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Your Name" %>
+  </div><!--end form-group-->
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div><!--end form-group-->
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+  </div><!--end form-group-->
+</div><!--end row-->
+<div class="row form-button">
+<%= form.submit "Send", class: "form_label" %>
+</div>
+<% end %>
 <p>Address: 0 Dock Square Rockport, MA 01966. Phone: 978.290.9895 Email: info@saltofthesea.com</p>
