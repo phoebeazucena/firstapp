@@ -11,7 +11,11 @@ nav {
   height: 48px;
   background: linear-gradient(60deg, #44767D, #A2D4DE);
 }
-nav ul li {
+.nav>li {
+  display: inline-block;
+  float: right;
+}
+nav ul li:not(.log) {
   display: inline-block;
   padding: 15px;
   margin-left: 10px;
@@ -61,7 +65,7 @@ h2 {
   font-size: 4vw;
   text-align: center;
 }
-p {
+p:not(p.notice) {
   padding: 15px 15px 20px 15px;
   font-family: Poiret One, Geneva, sans-serif;
   font-size: 1.9vw;
@@ -145,6 +149,20 @@ a.back-link {
   font-weight: 200;
   text-decoration: underline;
   color: #000;
+}
+
+//Sign-up/Sign-in
+.log {
+  font-family: Poiret One, Geneva, sans-serif;
+  font-size: 1.5em;
+}
+.form-group, .user-form {
+  margin: auto;
+  padding-bottom: 20px;
+  width: 15%;
+}
+input {
+  border-style: hidden;
 }
 //Sticky footer
 footer {
