@@ -26,7 +26,13 @@
   color: #fff;
 }
 .product_description {
+  padding: 3px;
+  font-family: Poiret One, Geneva, sans-serif;
+  font-weight: 400;
   font-size: 1.5vw;
+}
+.product_rating {
+  padding-bottom: 35px;
 }
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
