@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 <div class="row">
-  <div class="col-md-6 col-xs-12">
+  <div class="col-md-8 col-xs-12">
     <p class="thumbnail">
       <%= image_tag(@product.image_url, class: "img-responsive") %>
     </p>
   </div><!--end col-->
-  <div class="col-md-6 col-xs-12 product_wrap">
+  <div class="col-md-4 col-xs-12 product_wrap">
     <p class="product_name">
       <%= @product.name %>
     </p>
@@ -25,6 +25,7 @@
         <%= @product.price %>
       </p>
 
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
       <p class="product_description product_rating">
         <span class="glyphicon glyphicon-thumbs-up"></span> Highest rating: <%= @product.highest_rating_comment %><br>
         <span class="glyphicon glyphicon-thumbs-down"></span> Lowest rating: <%= @product.lowest_rating_comment %>
@@ -32,7 +33,10 @@
       <%= link_to 'Edit', edit_product_path(@product) %> |
       <%= link_to 'Back', products_path %>
     </div><!--end product_info-->
+      <%= render 'new_comment' %>
   </div><!--end col-->
-
-
+  <div class="col-xs-12 col-md-12">
+    <h2>Reviews</h2>
+    <%= render 'comments' %>
+  </div>
 </div><!--end row-->
