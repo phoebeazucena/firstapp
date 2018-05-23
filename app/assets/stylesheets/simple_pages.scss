@@ -5,6 +5,12 @@ html, body {
   height: 100%;
   background-color: #F5E9DC;
 }
+a {
+  color: #000;
+}
+a:visited {
+  color: #666;
+}
 
 //Nav Bar
 nav {
@@ -26,7 +32,7 @@ nav ul li a {
   color: #fff;
 }
 nav ul li a:visited {
-  color: #fff;
+  color: #000;
 }
 form.form-horizontal {
   display: inline;
@@ -104,9 +110,6 @@ p:not(p.notice) {
   display: block;
   position: relative;
   padding: 15px;
-}
-a:visited {
-  color: #fff;
 }
 
 //INDEX PAGE
