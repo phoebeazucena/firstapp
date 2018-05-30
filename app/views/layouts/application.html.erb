@@ -14,30 +14,42 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-        <li><%= link_to "Products", products_path %></li>
-        <li><%= link_to "Featured Products", simple_pages_landing_page_path %></li>
-      </ul>
-      <ul class="nav pull-right">
-        <li class="log">
-        <% if user_signed_in? %>
-          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-        <% else %>
-          <%= link_to('Login', new_user_session_path) %>
-        <% end %>
-        </li>
-      </ul>
-      <ul class="navbar-form navbar-right" role="search">
-        <%= form_with(url: products_path, method: 'get', local: true, html: {class: "form-horizontal"}) do |form| %>
-        <li><%= form.text_field :q, id: 'q', value: params[:q], type: "text", class: "navbar-text", size: "22", placeholder: "Search for products..." %></li>
-        <li><%= form.submit 'Search', class: "btn btn-default navbar-btn" %></li>
-        <% end %>
-      </ul>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div><!--end navbar-header-->
+        <div class="navbar-collapse collapse">
+          <ul class="navbar navbar-nav navbar-fixed-top">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Featured Products", simple_pages_landing_page_path %></li>
+            <li class="navbar-form" role="search">
+              <%= form_with(url: products_path, method: 'get', local: true, html: {class: "form-horizontal"}) do |form| %>
+              <%= form.text_field :q, id: 'q', value: params[:q], type: "text", class: "navbar-text", size: "22", placeholder: "Search for products..." %>
+              <%= form.submit 'Search', class: "btn btn-default navbar-btn" %>
+              <% end %>
+            </li>
+            <li class="navbar-btn navbar-right">
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          </ul>
+        </div><!--end navbar-collapse-->
+      </div><!--end container-fluid-->
     </nav>
+
     <div class="page-wrap">
       <% if notice %>
         <p class="alert alert-info alert-dismissible" role="alert">
