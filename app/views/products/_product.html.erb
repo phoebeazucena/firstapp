@@ -4,7 +4,7 @@
     <h1 class="product_name"><%= link_to product.name, product %></h1>
     <div class="product_info">
       <p class="product_description"><%= product.description %></p>
-      <strong>$<%= product.price %></strong>
+      <strong>$<%= number_with_precision(product.price, precision: 2) %></strong>
     </div><!--end product_info-->
   </div><!--end product_content-->
 </div><!--end col-->

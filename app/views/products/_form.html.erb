@@ -13,27 +13,27 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
+    <%= form.text_field :name, id: :product_name, class: "form-group" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
+    <%= form.text_area :description, id: :product_description, class: "form-group"  %>
   </div>
 
   <div class="field">
     <%= form.label :image_url %>
-    <%= form.text_field :image_url, id: :product_image_url %>
+    <%= form.text_field :image_url, id: :product_image_url, class: "form-group"  %>
   </div>
 
   <div class="field">
     <%= form.label :colour %><br>
-    <%= form.text_field :colour %>
+    <%= form.text_field :colour, class: "form-group"  %>
   </div>
 
   <div class="field">
     <%= form.label :price %><br>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class: "form-group"  %>
   </div>
 
   <div class="actions">
