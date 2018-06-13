@@ -14,11 +14,11 @@
   </div><!--end form-group-->
   <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, required: "required" %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, required: "required" %><br>
   </div><!--end form-group-->
 </div><!--end row-->
-<div class="row form-button">
-<%= form.submit "Send", class: "form_label" %>
+<div class="form-group">
+<%= form.submit "Send", class: "btn btn-primary" %>
 </div>
 <% end %>
-<p>Address: 0 Dock Square Rockport, MA 01966. Phone: 978.290.9895 Email: info@saltofthesea.com</p>
+<p class="contact">Address: 0 Dock Square Rockport, MA 01966. Phone: 978.290.9895 Email: info@saltofthesea.com</p>
