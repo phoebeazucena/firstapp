@@ -25,7 +25,9 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    byebug
+    if !Rails.env.production?
+      byebug
+    end
     @product = Product.new
   end
 
