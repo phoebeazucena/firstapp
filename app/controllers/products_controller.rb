@@ -4,12 +4,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-  
+    logger.debug "10 products per page"
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term).paginate(page: params[:page], per_page: 10)
+      logger.debug "product: #{@products}"
     else
       @products = Product.all.paginate(page: params[:page], per_page: 10)
+      logger.debug "product: #{@products}"
     end
   end
 
@@ -18,10 +20,12 @@ class ProductsController < ApplicationController
   def show
     @comments = @product.comments.order("created_at DESC")
     @comments = @product.comments.paginate(page: params[:page], per_page: 5)
+    logger.debug "comment: #{@comments}"
   end
 
   # GET /products/new
   def new
+    byebug
     @product = Product.new
   end
 

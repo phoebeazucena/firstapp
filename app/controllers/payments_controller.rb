@@ -8,12 +8,14 @@ class PaymentsController < ApplicationController
         amount: @product.price*100,
         currency: "usd",
         source: token,
-        description: params[:stripeEmail]
+        description: params[:stripeEmail],
       )
 
     if charge.paid
-      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price),
-      receipt_email: 'user.email'
+      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price, receipt_email: @user.email),
+      UserMailer.confirm_payment(@user, @product).deliver_now
+      flash[:notice] = "Thank you for your purchase"
+      redirect_to @product 
     end
 
     rescue Stripe::CardError => e # The card has been declined
