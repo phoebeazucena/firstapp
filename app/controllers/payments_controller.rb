@@ -3,6 +3,7 @@ class PaymentsController < ApplicationController
     @product = Product.find(params[:product_id])
     @user = current_user
     token = params[:stripeToken] #Create the charge on Stripe's servers. This will charge users's card
+
     begin
       charge = Stripe::Charge.create(
         amount: @product.price*100,
@@ -13,7 +14,7 @@ class PaymentsController < ApplicationController
       )
 
     if charge.paid
-      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
+      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price*100)
       UserMailer.confirm_payment(@user, @product).deliver_now
       flash[:notice] = "Thank you for your purchase!"
       redirect_to @product
