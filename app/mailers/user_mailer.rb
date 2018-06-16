@@ -15,7 +15,6 @@ class UserMailer < ApplicationMailer
     @user = user
     @product = product
     @message = message
-
     mail(to: user.email, subject: "Your recent purchase from Salt of the Sea", body: "Thank you for your purchase of #{@product.name}")
   end
 end

@@ -9,12 +9,13 @@ class PaymentsController < ApplicationController
         currency: "usd",
         source: token,
         description: params[:stripeEmail],
+        receipt_email: @user.email
       )
 
     if charge.paid
-      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price, receipt_email: @user.email)
+      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
       UserMailer.confirm_payment(@user, @product).deliver_now
-      flash[:notice] = "Thank you for your purchase"
+      flash[:notice] = "Thank you for your purchase!"
       redirect_to @product
     end
 
