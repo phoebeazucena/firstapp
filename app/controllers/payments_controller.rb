@@ -1,4 +1,6 @@
 class PaymentsController < ApplicationController
+  before_action :authenticate_user!
+  
   def create
     @product = Product.find(params[:product_id])
     @user = current_user
