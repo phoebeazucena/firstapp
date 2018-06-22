@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
     if signed_in? && current_user.admin?
       @product = Product.new
     else
-      redirect_to main_app.root_url, alert: "You are not authorized to view this page"
+      redirect_to main_app.root_url, alert: "You are not authorized to view this page."
     end
   end
 
