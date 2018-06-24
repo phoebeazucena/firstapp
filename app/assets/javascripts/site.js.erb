@@ -1,4 +1,7 @@
 $(document).on('turbolinks:load', function(){
+//elevateZoom plug-in
+   $('.img-zoom').elevateZoom();
+//Raty plug-in
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
