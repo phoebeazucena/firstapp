@@ -1,12 +1,13 @@
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 product_wrap">
-  <div class="product_content">
-    <%= image_tag(product.image_url, class: "img-responsive") %>
-    <h1 class="product_name"><%= link_to product.name, product %></h1>
-    <div class="product_info">
-      <p class="product_description"><%= product.description %></p>
-      <strong>$<%= number_with_precision(product.price, precision: 2) %></strong>
-    </div><!--end product_info-->
-  </div><!--end product_content-->
-</div><!--end col-->
-
+<% cache product do %>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 product_wrap">
+    <div class="product_content">
+      <%= image_tag(product.image_url, class: "img-responsive") %>
+      <h1 class="product_name"><%= link_to product.name, product %></h1>
+      <div class="product_info">
+        <p class="product_description"><%= product.description %></p>
+        <strong>$<%= number_with_precision(product.price, precision: 2) %></strong>
+      </div><!--end product_info-->
+    </div><!--end product_content-->
+  </div><!--end col-->
+<% end %>
 <% logger.debug "Product: #{product.name}" %>

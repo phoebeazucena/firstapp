@@ -34,6 +34,8 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'stripe'
 
 gem 'brakeman', '~> 4.3.1'
+
+gem 'dalli'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do
