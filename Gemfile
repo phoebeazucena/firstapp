@@ -36,6 +36,10 @@ gem 'stripe'
 gem 'brakeman', '~> 4.3.1'
 
 gem 'dalli'
+
+gem 'redis-rails'
+
+gem 'newrelic_rpm'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do
