@@ -24,7 +24,6 @@ class ProductsController < ApplicationController
     logger.debug "comment: #{@comments}"
   end
 
-
   # GET /products/new
   def new
     if signed_in? && current_user.admin?
@@ -95,6 +94,7 @@ class ProductsController < ApplicationController
       redirect_to main_app.root_url, alert: "You are not authorized to view this page"
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <% cache do %>
     <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar navbar-header">
@@ -38,6 +39,7 @@
               <%= form.submit 'Search', class: "btn btn-primary navbar-btn" %>
               <% end %>
             </li>
+    <% end %>
             <li class="navbar-btn navbar-right">
               <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
@@ -49,6 +51,7 @@
         </div><!--end navbar-collapse-->
       </div><!--end container-fluid-->
     </nav>
+
 
     <div class="page-wrap">
       <% if notice %>
@@ -62,6 +65,7 @@
       <% end %>
 
       <%= yield %>
+
     </div><!--end page-wrap-->
     <footer class="site-footer">
       &copy; 2018 Salt of the Sea

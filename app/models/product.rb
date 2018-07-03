@@ -19,4 +19,12 @@ class Product < ApplicationRecord
   def average_rating
     comments.average(:rating).to_f
   end
+
+  def top_comment
+    $redis.set("@product.highest_rating_comment", "#{comment.body}")
+  end
+
+  def display_top_comment
+    $redis.get("@product.highest_rating_comment")
+  end
 end
