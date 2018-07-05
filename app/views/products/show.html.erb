@@ -50,7 +50,8 @@
 
   <div class="col-xs-12 col-md-12">
     <h2>Reviews</h2>
-      <p>Our Top Review: <%= @product.display_top_comment %></p>
+      <p class="product_views">You have viewed this product <%= @product.view_total %> times</p>
+    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%= render 'comments' %>
   </div><!--end col-->
 </div><!--end row-->
