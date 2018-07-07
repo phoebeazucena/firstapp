@@ -1,6 +1,6 @@
 
 <p id="alert"><%= alert %></p>
-<div class="row">
+<div class="row" data-product-id="<%= @product.id %>">
   <div class="col-md-8 col-xs-12">
     <p class="thumbnail">
       <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
@@ -47,12 +47,12 @@
     </div><!--end product_info-->
     <%= render 'new_comment' %>
   </div><!--end col-->
-
+</div><!--end row-->
   <div class="col-xs-12 col-md-12">
     <h2>Reviews</h2>
       <p class="product_views">You have viewed this product <%= @product.view_total %> times</p>
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%= render 'comments' %>
   </div><!--end col-->
-</div><!--end row-->
+
 <%= will_paginate @comments %>
