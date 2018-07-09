@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe UsersController, type: :controller do
-  
+
   before do
     @user = FactoryBot.create(:user)
     @user2 = FactoryBot.create(:user)
